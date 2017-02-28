@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>My First CSS Stylesheet</title>
-</head>
+<html>
 <header> Heidelberg Academy Education Team </header>
 
 <body>
@@ -19,26 +14,27 @@
             font-family: 'Lucida Sans' verdana;
             margin-left: 20px;
             line-height: 20px;
+            color:antiquewhite;
         }
         
-        div {
+        .containerDiv {
             /* background-image: url("https://www.heidelbergengineering.com/media/e-learning/Totara-INT/pictures/Member_Academy.jpg");
             background-position: left;
             background-attachment: fixed;*/
-            background-color: lightslategrey;
-            width: 700px;
-            height: 160px;
+            background-color: black;
+            width: 750px;
+            height: 150px;
             padding-bottom: 100px;
-            padding-top: 10px;
-            border: 20px solid gray;
+            border: 20px solid black;
             margin: 50px;
+            top: 50px;
         }
-        
-        img {
+
+        /*img {
             float: left;
         }
-        
-        div {
+        */
+        .clear {
             clear: both;
         }
         
@@ -49,43 +45,59 @@
         .lists {
             font-family: 'Lucida sans' verdana;
             list-style-type: square;
+            margin-top: 20px;
+        }
+        .sub-header {
+            color:brown;   
+            list-style-type: square;
         }
     </style>
-
-    <div>
-        <img src="https://www.heidelbergengineering.com/media/e-learning/Totara-INT/pictures/Member_Academy.jpg">
-        <p2 class="sub-header">
-            <span> <strong> Carolyn Evangelista </strong> </span>
+ 
+    <div class="containerDiv">
+        <div style="width:36%;float:left;">   
+            <img src="https://www.heidelbergengineering.com/media/e-learning/Totara-INT/pictures/Member_Academy.jpg">
+        </div>
+        <div style="width:64%;float:left;">
+            <p2 class="sub-header">
+                <span> <strong> Carolyn Evangelista </strong> </span>
+                <br>
+                <br>
+            </p2>
+            <em class="title"> Manager of Clinical Education </em>
             <br>
-            <br>
-        </p2>
-        <em class="title"> Manager of Clinical Education </em>
-        <br>
-        <ul class="lists">
-            <li>M.B.A Health Care Management/Marketing</li>
-            <li>B.S. Medical Laboratory Science - University of Vermont</li>
-            <li>CCOA certified through JCAHPO</li>
-            <li>Member, Association of Technical Personnel in Ophthalmology</li>
-            <li>Joined Heidelberg Engineering in 2016</li>
-        </ul>
+            <ul class="lists">
+                <li>M.B.A Health Care Management/Marketing</li>
+                <li>B.S. Medical Laboratory Science - University of Vermont</li>
+                <li>CCOA certified through JCAHPO</li>
+                <li>Member, Association of Technical Personnel in Ophthalmology</li>
+                <li>Joined Heidelberg Engineering in 2016</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
     </div>
 
-    <div>
+    <div class="containerDiv">
+        <div style="width:36%;float:left;">   
+            <img src="https://www.heidelbergengineering.com/media/e-learning/Totara-INT/pictures/Member_Academy.jpg">
+        </div>
+        <div style="width:64%;float:left;">        
         <p2 class="sub-header">
-            <span> <strong>Amanda Bye</strong> </span>
+                <span> <strong>Amanda Bye</strong> </span>
+                <br>
+                <br>
+            </p2>
+            <em class="title"> Senior Clinical Application Specialist </em>
             <br>
-            <br>
-        </p2>
-        <em class="title"> Senior Clinical Application Specialist </em>
-        <br>
-        <ul class="lists">
-            <li>B.S. Biomedical Photographic Communications - Rochester Institute of Technology</li>
-            <li>CRA Certified through OPS</li>
-            <li>Active member of OPS</li>
-            <li>Joined Heidelberg Engineering in 2009</li>
-        </ul>
-
+            <ul class="lists">
+                <li>B.S. Biomedical Photographic Communications - Rochester Institute of Technology</li>
+                <li>CRA Certified through OPS</li>
+                <li>Active member of OPS</li>
+                <li>Joined Heidelberg Engineering in 2009</li>
+            </ul>
+            </div>
+            <div class="clear"></div>
     </div>
+
 </body>
 
 </html>
